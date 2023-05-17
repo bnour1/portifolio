@@ -1,0 +1,267 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  :root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+.video-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .content {
+    background: radial-gradient(100% 359.18% at 0% 0%, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.03) 100%);
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+    height: 1080px;
+    width: 1152px;
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+    border-bottom: none;
+    border-top: none;
+    backdrop-filter: blur(15px);
+  }
+
+  .profile{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+    height: 27%;
+    width: 80%;
+    top: 10%;
+    left: 5%;
+  }
+
+  .profilePic{
+    position: relative;
+    border-radius: 8%;
+    height: 250px;
+    width: 250px;
+    top: 6%;
+    left: 9%;
+    border: 3.5px solid rgb(0,0,0);
+    background-color: rgb(204, 204, 204);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  #name {
+    position: absolute;
+    top: -2%;
+    white-space: nowrap;
+    font-size: 325%;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.15));
+  }
+
+  #subname {
+    position: relative;
+    margin: 17% 2%;
+    font-weight: 400;
+    white-space: nowrap;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.15));
+  }
+
+  #ghbutton {
+    background-color: rgb(184, 184, 184);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    width: 200px;
+    height: 45px;
+    left: 7%;
+    top: -20%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  #lkbutton {
+    background-color: rgb(184, 184, 184);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    width: 200px;
+    height: 45px;
+    left: 15%;
+    top: -20%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  
+  #cvbutton {
+    background-color: rgb(184, 184, 184);
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    left: 36%;
+    top: 84%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  #lkbutton img {
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    height: 25px;
+    height: 25px;
+  }
+  #ghbutton img {
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    height: 30px;
+    height: 30px;
+  }
+
+  .about {
+    position: relative;
+    top: 18%;
+    left: 8%;
+    height: 30%;
+    width: 65%;
+    background-color:rgba(87, 87, 87, 0.596);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .about h3{
+    padding: 2px 2px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    margin-block-start: 0;
+    background-color: rgba(255, 255, 255, 0.596);
+  }
+
+  #textam {
+    color:rgb(235, 235, 235);
+    margin: 2px 10px;
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+  }
+  .links{
+    position: absolute;
+    top: 45%;
+    left: 90%;
+    list-style-type:none;
+  }
+
+  .links li{
+    margin: 40%;
+  }
+
+  .links li img{
+    height: 40px;
+    width: 40x;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) contrast(10%);
+  }
+
+
+  #cv {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    top: 27%;
+    left: 47%; 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: rgb(184, 184, 184);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 6px;
+  }
+
+  #info-box-twitter{
+    position: absolute;
+    display: none;
+    top: 46%;
+    left:83%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  #info-box-rabbit{
+    position: absolute;
+    display: none;
+    top: 68%;
+    left:88%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  #info-box-mail{
+    position: absolute;
+    display: none;
+    top: 62.5%;
+    left:71%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  #info-box-instagram{
+    position: absolute;
+    display: none;
+    top: 51.5%;
+    left:81%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  #info-box-discord{
+    position: absolute;
+    display: none;
+    top: 57%;
+    left:84%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  #info-box-twitter.active {
+    display: block;
+  }
+  #info-box-instagram.active {
+    display: block;
+  }
+  #info-box-discord.active {
+    display: block;
+  }
+  #info-box-mail.active {
+    display: block;
+  }
+  #info-box-rabbit.active {
+    display: block;
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
